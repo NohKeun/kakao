@@ -27,13 +27,13 @@ public class DatabaseConfig extends AbstractJdbcConfiguration {
 
 	@Bean
 	@Primary
-	public OneQTransactionManager transactionManager(DataSource userDataSource) {
-		return new OneQTransactionManager(userDataSource);
+	public TransactionManager transactionManager(DataSource userDataSource) {
+		return new TransactionManager(userDataSource);
 	}
 
 	@Bean
-	public OneQonRowMapper oneQonRowMapper()
+	public OracleRowMapper RowMapper()
 	{
-		return new OneQonRowMapper();
+		return new OracleRowMapper();
 	}
 }
