@@ -1,7 +1,5 @@
 package com.kakao.online.jpa.entity.common;
 
-import com.oneqoncore.jpa.common.BaseEntity;
-import com.inobis.jpa.entity.aact.pk.AactAccClsbrPk;
 import lombok.*;
 
 import jakarta.persistence.*;
@@ -10,9 +8,8 @@ import java.io.Serializable;
 import java.time.LocalDate;
 
 @Entity @Table(name="NOTIFICATION_TEMPLETE")
-@IdClass(AactAccClsbrPk.class)
 @Getter @Setter @NoArgsConstructor @AllArgsConstructor @EqualsAndHashCode(callSuper=false) //lombok
-public class NotificationTemplete extends BaseEntity implements Serializable {
+public class NotificationTemplete implements Serializable {
    /** VARCHAR2(4)         */ @Id @Column(name="BR_NO"     , length=4               , nullable=false) private String      brNo                        ;
    /** DATE                */ @Id @Column(name="OPEN_IL"                            , nullable=false) private LocalDate   openIl                      ;
    /** VARCHAR2(1)         */     @Column(name="IBM_RCVGB" , length=1                               ) private String      ibmRcvgb                    ;

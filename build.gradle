@@ -7,9 +7,6 @@ plugins {
 bootJar {
 	enabled = true
 	mainClass = 'com.kakao.online.Application'
-//	archiveVersion = "0.0.0"
-//	archivesBaseName = '원하는이름'
-//	archiveFileName = '원하는이름.jar'
 }
 jar { enabled = false }
 

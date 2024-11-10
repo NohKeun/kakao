@@ -8,5 +8,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class EmailNotification extends Notification {
 
-
+    @Override
+    public void sendNotification() {
+        System.out.println("email");
+    }
 }
