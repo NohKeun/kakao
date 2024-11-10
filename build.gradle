@@ -35,8 +35,8 @@ dependencies {
 
 	implementation project(':interface')
 	implementation project(':common')
+	implementation project(':deposit')
 	implementation project(':onlinecore')
-
 }
 
 subprojects {

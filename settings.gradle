@@ -3,4 +3,5 @@ rootProject.name = 'online'
 include('onlinecore'   );  project(':onlinecore'   ).projectDir = file('onlinecore'       )
 include('interface'    );  project(':interface'    ).projectDir = file('api/interface'    )
 include('common'       );  project(':common'       ).projectDir = file('api/common'       )
+include('deposit'      );  project(':deposit'      ).projectDir = file('api/deposit'      )
 
