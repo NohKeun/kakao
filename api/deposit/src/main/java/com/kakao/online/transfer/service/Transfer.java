@@ -14,5 +14,6 @@ public class Transfer {
 
     public void send() {
         NotificationInf notificationInf = commonFactory.create("kakaoTalk");
+        notificationInf.sendNotification();
     }
 }

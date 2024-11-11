@@ -1,12 +1,16 @@
-plugins {
-    id 'java'
-}
+bootJar { enabled = false }
+jar { enabled = true }
 
-group 'com.kakao'
+group 'com.kakao.online'
 version '0.0.1-SNAPSHOT'
 
 repositories {
     mavenCentral()
+}
+
+compileJava {
+    options.encoding = 'UTF-8'
+    options.compilerArgs = [ '-parameters' ]
 }
 
 dependencies {

@@ -55,7 +55,7 @@ public class SwaggerConfig {
         SpringDocUtils.getConfig().replaceWithSchema(ZonedDateTime.class, shzldt);
     }
     @Bean
-    public GroupedOpenApi transfer() {
+    public GroupedOpenApi trans() {
         log.debug("GroupedOpenApi-auth");
 
         return GroupedOpenApi.builder()
