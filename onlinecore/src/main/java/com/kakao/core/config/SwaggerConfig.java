@@ -54,24 +54,14 @@ public class SwaggerConfig {
         SpringDocUtils.getConfig().replaceWithSchema(LocalDateTime.class, shldt);
         SpringDocUtils.getConfig().replaceWithSchema(ZonedDateTime.class, shzldt);
     }
-    @Bean
-    public GroupedOpenApi trans() {
-        log.debug("GroupedOpenApi-auth");
-
-        return GroupedOpenApi.builder()
-                .group("01.transfer")
-                .packagesToScan("com.kakao.api.transfer")
-                .addOpenApiCustomizer(buildSecurityOpenApi())
-                .build();
-    }
 
     @Bean
     public GroupedOpenApi deposit() {
         log.debug("GroupedOpenApi-auth");
 
         return GroupedOpenApi.builder()
-                .group("02.deposit")
-                .packagesToScan("com.kakao.api.deposit")
+                .group("01.deposit")
+                .packagesToScan("com.kakao.api")
                 .addOpenApiCustomizer(buildSecurityOpenApi())
                 .build();
     }

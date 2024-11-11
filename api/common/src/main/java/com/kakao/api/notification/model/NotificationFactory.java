@@ -1,6 +1,6 @@
 package com.kakao.api.notification.model;
 
-import com.kakao.api.inf.common.CommonFactory;
+import com.kakao.api.inf.factory.CommonFactory;
 import com.kakao.api.inf.common.NotificationInf;
 import com.kakao.api.notification.module.EmailNotification;
 import com.kakao.api.notification.module.KakaoTalkNotification;
@@ -20,7 +20,7 @@ public class NotificationFactory implements CommonFactory {
     private final PushNotification pushNotification;
 
     @Override
-    public NotificationInf create(String noti) {
+    public NotificationInf injectionNotificationInf(String noti) {
         if (StringUtils.compare(noti, "email") == 0 ) {
             return emailNotification;
         }
