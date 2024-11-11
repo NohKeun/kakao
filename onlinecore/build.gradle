@@ -4,35 +4,8 @@ plugins {
     id "io.spring.dependency-management" version "${springDependencyVersion}"
 }
 
-bootJar {
-    enabled = false
-    archiveVersion = "0.0.0"
-//	archivesBaseName = '원하는이름'
-//	archiveFileName = '원하는이름.jar'
-}
-jar { enabled = true }
-
-
-group 'com.kakao.online'
+group 'com.kakao'
 version '0.0.1-SNAPSHOT'
-
-compileTestJava.options.encoding = 'UTF-8'
-
-compileJava {
-    options.encoding = 'UTF-8'
-    options.compilerArgs = [ '-parameters' ]
-}
-
-configurations {
-    compileOnly {
-        extendsFrom annotationProcessor
-    }
-}
-
-configurations.configureEach {
-    resolutionStrategy.cacheChangingModulesFor 30, 'seconds'
-    resolutionStrategy.cacheDynamicVersionsFor 30, 'seconds'
-}
 
 repositories {
     mavenCentral()
