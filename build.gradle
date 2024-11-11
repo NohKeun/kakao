@@ -6,13 +6,13 @@ plugins {
 
 bootJar {
 	enabled = true
-	mainClass = 'com.kakao.online.Application'
+	mainClass = 'com.kakao.Application'
 }
 jar { enabled = false }
 
 
 springBoot {
-	mainClass = 'com.kakao.online.Application'
+	mainClass = 'com.kakao.Application'
 }
 
 group = 'com.kakao'
