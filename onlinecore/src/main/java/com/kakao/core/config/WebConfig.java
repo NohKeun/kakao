@@ -11,6 +11,8 @@ import org.springframework.web.servlet.view.json.MappingJackson2JsonView;
 public class WebConfig {
     @Bean
     public MappingJackson2JsonView jsonView() {
+        log.debug("WebConfig Start...");
+
         MappingJackson2JsonView ov = new MappingJackson2JsonView();
         ov.setContentType("application/json;charset=UTF-8");
         ov.setObjectMapper(new ObjectMapper());

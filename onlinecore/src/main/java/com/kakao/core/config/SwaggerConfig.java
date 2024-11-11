@@ -23,7 +23,7 @@ import java.time.format.ResolverStyle;
 @Slf4j
 @Configuration
 @OpenAPIDefinition(info =
-@Info(title = "kakao online", version = "v0.0.1", description = "kakao online",
+@Info(title = "kakao-online", version = "v0.0.1", description = "kakao-online",
         license = @License(name = "Apache 2.0", url = "http://springdoc.org")))
 public class SwaggerConfig {
 
@@ -78,7 +78,7 @@ public class SwaggerConfig {
 
     @Bean
     public OpenApiCustomizer buildSecurityOpenApi() {
-        // log.debug("GroupedOpenApi-buildSecurityOpenApi");
+         log.debug("GroupedOpenApi-buildSecurityOpenApi");
         SecurityScheme securityScheme = new SecurityScheme()
                 .name(JWT_TOKEN_HEADER_PARAM)
                 .type(SecurityScheme.Type.HTTP)

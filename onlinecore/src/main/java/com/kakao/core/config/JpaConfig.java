@@ -8,9 +8,10 @@ import org.springframework.data.repository.config.BootstrapMode;
 
 @Slf4j
 @Configuration
-@EnableJpaRepositories( basePackages = {"com.kakao.online"}
+@EnableJpaRepositories( basePackages = {"com.kakao"}
         , bootstrapMode = BootstrapMode.DEFAULT
 )
 @EnableJpaAuditing
 public class JpaConfig {
+
 }
