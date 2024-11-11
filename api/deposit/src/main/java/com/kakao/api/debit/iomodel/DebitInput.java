@@ -1,4 +1,4 @@
-package com.kakao.api.transfer.iomodel;
+package com.kakao.api.debit.iomodel;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,6 +9,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper=false)
-public class TransferInput {
+public class DebitInput {
     private String          appNm;
 }

@@ -20,11 +20,11 @@ public class NotificationFactory implements CommonFactory {
     private final PushNotification pushNotification;
 
     @Override
-    public NotificationInf create(String kakao) {
-        if (StringUtils.compare(kakao, "email") == 0 ) {
+    public NotificationInf create(String noti) {
+        if (StringUtils.compare(noti, "email") == 0 ) {
             return emailNotification;
         }
-        else if (StringUtils.compare(kakao, "kakaoTalk") == 0 ) {
+        else if (StringUtils.compare(noti, "kakaoTalk") == 0 ) {
             return kakaoTalkNotification;
         }
         else {

@@ -1,4 +1,4 @@
-package com.kakao.api.transfer.service;
+package com.kakao.api.debit.service;
 
 import com.kakao.api.inf.common.CommonFactory;
 import com.kakao.api.inf.common.NotificationInf;
@@ -9,10 +9,10 @@ import org.springframework.stereotype.Service;
 @Slf4j
 @Service
 @RequiredArgsConstructor
-public class Transfer {
+public class DebitService {
     private final CommonFactory commonFactory;
 
-    public void send() {
+    public void debit() {
         NotificationInf notificationInf = commonFactory.create("kakaoTalk");
         notificationInf.sendNotification();
     }
