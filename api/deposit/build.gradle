@@ -14,7 +14,7 @@ compileJava {
 }
 
 dependencies {
-    implementation project(path: ':api.interface', configuration: 'default')
+    implementation project(path: ':api.domain', configuration: 'default')
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'

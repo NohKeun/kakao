@@ -60,7 +60,7 @@ dependencies {
 
 
 	implementation project(':onlinecore')
-	implementation project(':api.interface')
+	implementation project(':api.domain')
 	implementation project(':api.common')
 	implementation project(':api.deposit')
 }

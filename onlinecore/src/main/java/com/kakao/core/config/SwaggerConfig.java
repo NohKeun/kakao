@@ -61,7 +61,7 @@ public class SwaggerConfig {
 
         return GroupedOpenApi.builder()
                 .group("01.deposit")
-                .packagesToScan("com.kakao.api")
+                .packagesToScan("com.kakao.deposit")
                 .addOpenApiCustomizer(buildSecurityOpenApi())
                 .build();
     }
