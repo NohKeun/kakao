@@ -10,6 +10,9 @@ public class EmailNotification extends Notification {
 
     @Override
     public void sendNotification() {
+        super.sendNotification();
         System.out.println("email");
+
+        super.verify();
     }
 }
