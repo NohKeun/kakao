@@ -11,6 +11,9 @@ public abstract class Debit implements DepositInf {
     @Override
     public void debit() {
         log.debug("보내기 전");
+    }
 
+    public void validate() {
+        log.debug("출금가능 계좌 확인");
     }
 }

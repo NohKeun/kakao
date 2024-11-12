@@ -30,7 +30,8 @@ public class DebitService {
 
         //1.injection(의존성주입)
 
-        //2.varify(출금계좌 검증)
+        //2.validate
+        //-출금계좌 검증
         //-
 
         //2.고객정보 검증
