@@ -28,11 +28,11 @@ public class DebitService {
         this.notificationInf = commonFactory.injectionNotificationInf("kakaoTalk");
         this.notificationInf.sendNotification();
 
-        //1.injection(의존성주입)
+        //1.injection(의존성주입) -> 수신통장 종류 , 알림메시지 종류
 
         //2.validate
-        //-출금계좌 검증
-        //-
+        //수신 : 출금 가능여부 검증 -> 계좌종류 별로
+        //
 
         //2.고객정보 검증
 
