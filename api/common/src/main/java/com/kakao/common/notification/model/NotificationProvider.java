@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 @Slf4j
 @RequiredArgsConstructor
 @Component
-public class NotificationFactory implements CommonFactory {
+public class NotificationProvider implements CommonFactory {
 
     private final EmailNotification emailNotification;
     private final KakaoTalkNotification kakaoTalkNotification;
