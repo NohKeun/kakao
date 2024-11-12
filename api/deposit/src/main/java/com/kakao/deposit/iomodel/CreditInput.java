@@ -1,4 +1,4 @@
-package com.kakao.deposit.debit.iomodel;
+package com.kakao.deposit.iomodel;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,6 +9,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper=false)
-public class DebitInput {
+public class CreditInput {
     private String          appNm;
 }

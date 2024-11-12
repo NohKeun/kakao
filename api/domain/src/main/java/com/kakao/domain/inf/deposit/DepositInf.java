@@ -4,7 +4,7 @@ public interface DepositInf {
 //
 //    void open();
 //
-//    void credit();
+    void credit();
 //
     void debit();
 //

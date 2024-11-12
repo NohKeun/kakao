@@ -1,8 +1,8 @@
-package com.kakao.deposit.debit.service;
+package com.kakao.deposit.service;
 
+import com.kakao.domain.inf.common.NotificationInf;
 import com.kakao.domain.inf.deposit.DepositInf;
 import com.kakao.domain.inf.factory.CommonFactory;
-import com.kakao.domain.inf.common.NotificationInf;
 import com.kakao.domain.inf.factory.DepositFactory;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 @Slf4j
 @Service
 @RequiredArgsConstructor
-public class DebitService {
+public class OpenService {
 
     //의존성주입 매서드
     private final CommonFactory commonFactory;
@@ -23,7 +23,7 @@ public class DebitService {
 
     //Dao Repository
 
-    public void debit() {
+    public void execute() {
 
         this.notificationInf = commonFactory.injectionNotificationInf("kakaoTalk");
         this.notificationInf.sendNotification();
