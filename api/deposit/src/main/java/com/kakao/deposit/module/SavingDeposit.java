@@ -21,4 +21,9 @@ public class SavingDeposit extends Deposit {
     public void credit() {
         super.credit();
     }
+
+    @Override
+    public void debit() {
+        super.debit();
+    }
 }

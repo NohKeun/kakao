@@ -8,4 +8,11 @@ import lombok.extern.slf4j.Slf4j;
 @RequiredArgsConstructor
 public abstract class Customer implements CustomerInf {
 
+    public void validate() {
+
+    }
+
+    public void infomation() {
+
+    }
 }

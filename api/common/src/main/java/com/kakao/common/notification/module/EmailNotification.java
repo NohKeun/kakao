@@ -13,6 +13,5 @@ public class EmailNotification extends Notification {
         super.sendNotification();
         System.out.println("email");
 
-        super.verify();
     }
 }

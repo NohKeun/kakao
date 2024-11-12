@@ -14,6 +14,11 @@ public class KakaoTalkNotification extends Notification {
     public void sendNotification() {
         System.out.println("Kakao Talk");
 
+        verify();
+    }
+
+    @Override
+    public void verify() {
         super.verify();
     }
 }
