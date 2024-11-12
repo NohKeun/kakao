@@ -1,5 +1,6 @@
 package com.kakao.deposit.debit.service;
 
+import com.kakao.domain.inf.deposit.DepositInf;
 import com.kakao.domain.inf.factory.CommonFactory;
 import com.kakao.domain.inf.common.NotificationInf;
 import com.kakao.domain.inf.factory.DepositFactory;
@@ -18,6 +19,7 @@ public class DebitService {
 
     //구현체 호출 인터페이스
     private NotificationInf notificationInf;
+    private DepositInf depositInf;
 
     //Dao Repository
 
@@ -26,7 +28,14 @@ public class DebitService {
         this.notificationInf = commonFactory.injectionNotificationInf("kakaoTalk");
         this.notificationInf.sendNotification();
 
+        //1.injection(의존성주입)
 
+        //2.varify(출금계좌 검증)
+        //-
+
+        //2.고객정보 검증
 
     }
+
+
 }

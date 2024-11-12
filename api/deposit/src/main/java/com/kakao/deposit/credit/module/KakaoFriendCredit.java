@@ -1,4 +1,4 @@
-package com.kakao.deposit.debit.module;
+package com.kakao.deposit.credit.module;
 
 import com.kakao.deposit.debit.model.Debit;
 import lombok.RequiredArgsConstructor;
@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @Slf4j
 @Component
 @RequiredArgsConstructor
-public class KakaoFriendDeposit extends Debit {
+public class KakaoFriendCredit extends Debit {
 
     @Override
     public void debit() {
