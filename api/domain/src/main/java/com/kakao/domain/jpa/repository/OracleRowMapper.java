@@ -1,4 +1,4 @@
-package com.kakao.domain.jpa.data;
+package com.kakao.domain.jpa.repository;
 
 
 import lombok.extern.slf4j.Slf4j;

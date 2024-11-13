@@ -4,6 +4,8 @@ import com.kakao.domain.inf.common.NotificationInf;
 import com.kakao.domain.inf.deposit.DepositInf;
 import com.kakao.domain.inf.factory.CommonFactory;
 import com.kakao.domain.inf.factory.DepositFactory;
+import com.kakao.domain.jpa.entity.common.BankCustomer;
+import com.kakao.domain.jpa.repository.common.DaoBankCustomer;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -22,8 +24,9 @@ public class DebitService {
     private DepositInf depositInf;
 
     //Dao Repository
+    private final DaoBankCustomer daoBankCustomer;
 
-    public void execute() {
+    public void execute() throws Exception{
 
         //1.injection(의존성주입) -> 수신통장 종류 , 알림메시지 종류 , 고객 종류
         this.notificationInf = commonFactory.injectionNotificationInf("kakaoTalk");
@@ -31,6 +34,8 @@ public class DebitService {
 
         this.depositInf = depositFactory.injectionDepositInf("saving");
         this.depositInf.debit();
+
+        daoBankCustomer.insert(new BankCustomer());
 
         //2.validate
         //수신 : 출금 가능여부 검증 -> 계좌종류 별로
