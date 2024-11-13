@@ -7,7 +7,8 @@ import lombok.*;
 @Getter
 @Setter
 @NoArgsConstructor
-@AllArgsConstructor@EqualsAndHashCode(callSuper=false) //lombok
+@AllArgsConstructor
+@EqualsAndHashCode(callSuper=false) //lombok
 public class TrscRelationPk {
 
     @Id

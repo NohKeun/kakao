@@ -1,19 +1,22 @@
 package com.kakao.domain.jpa.entity.common.pk;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.Id;
 import lombok.*;
 
-import java.io.Serializable;
-import java.time.LocalDate;
 
-
-public class NotificationTempletePk implements Serializable {
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@EqualsAndHashCode(callSuper=false) //lombok
+public class NotificationTempletePk {
    @Id
-   @Column(name = "TEMPLATE_ID", length = 20)
+   @Column(name = "TEMPLATE_ID", nullable = false)
    private String templateId; // 템플릿아이디 (PK)
 
    @Id
-   @Column(name = "TEMPLATE_TYPE_CD")
+   @Column(name = "TEMPLATE_TYPE_CD", nullable = false)
    private String templateTypeCd; // 템플릿종류코드
 
 }

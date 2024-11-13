@@ -2,7 +2,10 @@ package com.kakao.domain.jpa.entity.common;
 
 import com.kakao.domain.jpa.entity.common.pk.NotificationKakaoLogPk;
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.sql.Clob;
 import java.time.LocalDate;
@@ -10,7 +13,6 @@ import java.time.LocalDateTime;
 
 @Getter
 @Setter
-@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
@@ -19,11 +21,11 @@ import java.time.LocalDateTime;
 public class NotificationKakaoLog {
 
     @Id
-    @Column(name = "NOTIFICATION_DT")
+    @Column(name = "NOTIFICATION_DT", nullable = false)
     private LocalDate notificationDt; // 알림일자 (PK)
 
     @Id
-    @Column(name = "KAKAO_NO", length = 20)
+    @Column(name = "KAKAO_NO", nullable = false)
     private String kakaoNo; // 카카오고객번호 (PK)
 
     @Id
@@ -31,7 +33,7 @@ public class NotificationKakaoLog {
     private Long notificationSeqNo; // 알림일련번호 (PK)
 
     @Column(name = "NOTIFICATION_QUEUE_NO")
-    private Long notificationQueue; // 알림큐아이디 (FK)
+    private Long notificationQueueNo; // 알림큐아이디
 
     @Column(name = "NOTIFICATION_CREATE_DTM")
     private LocalDateTime notificationCreateDtm; // 알림생성일시

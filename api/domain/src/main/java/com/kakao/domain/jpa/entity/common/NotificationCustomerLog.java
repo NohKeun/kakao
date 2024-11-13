@@ -1,20 +1,18 @@
 package com.kakao.domain.jpa.entity.common;
 
 import com.kakao.domain.jpa.entity.common.pk.NotificationCustomerLogPk;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
-import lombok.NoArgsConstructor;
-import lombok.AllArgsConstructor;
-
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.sql.Clob;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.sql.Clob;
 
 @Getter
 @Setter
-@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
@@ -35,7 +33,7 @@ public class NotificationCustomerLog {
     private Long notificationSeqNo; // 알림일련번호 (PK)
 
     @Column(name = "NOTIFICATION_QUEUE_NO")
-    private Long notificationQueue; // 알림큐아이디 (FK)
+    private Long notificationQueueNo; // 알림큐아이디
 
     @Column(name = "NOTIFICATION_CREATE_DTM")
     private LocalDateTime notificationCreateDtm; // 알림생성일시

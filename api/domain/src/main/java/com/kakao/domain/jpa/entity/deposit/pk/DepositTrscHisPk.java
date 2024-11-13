@@ -9,7 +9,8 @@ import java.io.Serializable;
 @Getter
 @Setter
 @NoArgsConstructor
-@AllArgsConstructor@EqualsAndHashCode(callSuper=false) //lombok
+@AllArgsConstructor
+@EqualsAndHashCode(callSuper=false) //lombok
 public class DepositTrscHisPk implements Serializable {
 
     @Id

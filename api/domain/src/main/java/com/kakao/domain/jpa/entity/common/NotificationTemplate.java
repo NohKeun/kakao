@@ -10,7 +10,6 @@ import java.sql.Clob;
 
 @Getter
 @Setter
-@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity

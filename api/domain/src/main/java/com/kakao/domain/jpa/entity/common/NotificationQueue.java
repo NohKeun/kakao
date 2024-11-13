@@ -7,7 +7,6 @@ import java.time.LocalDateTime;
 
 @Getter
 @Setter
-@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
@@ -22,7 +21,7 @@ public class NotificationQueue {
     private Long notificationQueueNo; // 알림큐아이디 (AUTO INCREMENT)
 
     @Column(name = "TEMPLATE_ID")
-    private String templateId; // 템플릿아이디 (PK)
+    private String templateId; // 템플릿아이디
 
     @Column(name = "TEMPLATE_TYPE_CD")
     private String templateTypeCd; // 템플릿종류코드
