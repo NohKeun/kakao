@@ -1,7 +1,8 @@
 package com.kakao.deposit;
 
-import com.kakao.deposit.iomodel.CreditInput;
-import com.kakao.deposit.iomodel.DebitInput;
+import com.kakao.deposit.iomodel.CreditServiceInput;
+import com.kakao.deposit.iomodel.DebitServiceInput;
+import com.kakao.deposit.iomodel.DebitServiceOutput;
 import com.kakao.deposit.service.CreditService;
 import com.kakao.deposit.service.DebitService;
 import com.kakao.deposit.service.OpenService;
@@ -28,7 +29,7 @@ public class DepositController {
     private DebitService debitService;
 
     @PostMapping("/open")
-    public ResponseEntity<String> open(@RequestBody CreditInput input) throws Exception {
+    public ResponseEntity<String> open() throws Exception {
         log.debug("open start");
         openService.execute();
 
@@ -36,7 +37,7 @@ public class DepositController {
     }
 
     @PostMapping("/credit")
-    public ResponseEntity<String> credit(@RequestBody CreditInput input) throws Exception {
+    public ResponseEntity<String> credit(@RequestBody CreditServiceInput input) throws Exception {
         log.debug("credit start");
         creditService.execute();
 
@@ -44,10 +45,10 @@ public class DepositController {
     }
 
     @PostMapping("/debit")
-    public ResponseEntity<String> debit(@RequestBody DebitInput input) throws Exception {
+    public ResponseEntity<DebitServiceOutput> debit(@RequestBody DebitServiceInput input) throws Exception {
         log.debug("debit start");
-        debitService.execute();
+        DebitServiceOutput output = debitService.execute(input);
 
-        return ResponseEntity.ok("Success");
+        return ResponseEntity.ok(output);
     }
 }

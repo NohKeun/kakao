@@ -1,5 +1,7 @@
 package com.kakao.deposit.service;
 
+import com.kakao.deposit.iomodel.DebitServiceInput;
+import com.kakao.deposit.iomodel.DebitServiceOutput;
 import com.kakao.domain.inf.common.NotificationInf;
 import com.kakao.domain.inf.deposit.DepositInf;
 import com.kakao.domain.inf.factory.CommonFactory;
@@ -19,14 +21,19 @@ public class DebitService {
     private final CommonFactory commonFactory;
     private final DepositFactory depositFactory;
 
+    //Dao Repository
+    private final DaoBankCustomer daoBankCustomer;
+
+    //해당 클래스에서 사용할 전역변수
+    private DebitServiceInput input;
+    private DebitServiceOutput output = new DebitServiceOutput();
+
     //구현체 호출 인터페이스
     private NotificationInf notificationInf;
     private DepositInf depositInf;
 
-    //Dao Repository
-    private final DaoBankCustomer daoBankCustomer;
-
-    public void execute() throws Exception{
+    public DebitServiceOutput execute(DebitServiceInput input) throws Exception{
+        this.input = input;
 
         //1.injection(의존성주입) -> 수신통장 종류 , 알림메시지 종류 , 고객 종류
         this.notificationInf = commonFactory.injectionNotificationInf("kakaoTalk");
@@ -46,5 +53,7 @@ public class DebitService {
         //4.noti(해당 거래에 해당하는 방식으로 전송)
 
         //5.성공 반환
+
+        return output;
     }
 }
