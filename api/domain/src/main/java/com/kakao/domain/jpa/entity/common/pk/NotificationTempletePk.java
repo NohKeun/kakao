@@ -6,10 +6,14 @@ import lombok.*;
 import java.io.Serializable;
 import java.time.LocalDate;
 
-@Entity @Table(name="NOTIFICATION_TEMPLETE")
-@Getter @Setter @NoArgsConstructor @AllArgsConstructor @EqualsAndHashCode(callSuper=false) //lombok
+
 public class NotificationTempletePk implements Serializable {
-   /** VARCHAR2(4)         */ @Id @Column(name="BR_NO"     , length=4               , nullable=false) private String      brNo                        ;
-   /** DATE                */ @Id @Column(name="OPEN_IL"                            , nullable=false) private LocalDate   openIl                      ;
+   @Id
+   @Column(name = "TEMPLATE_ID", length = 20)
+   private String templateId; // 템플릿아이디 (PK)
+
+   @Id
+   @Column(name = "TEMPLATE_TYPE_CD")
+   private String templateTypeCd; // 템플릿종류코드
 
 }
