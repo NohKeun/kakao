@@ -10,7 +10,8 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper=false) //lombok
-public class NotificationTempletePk {
+public class NotificationTemplatePk {
+
    @Id
    @Column(name = "TEMPLATE_ID", nullable = false)
    private String templateId; // 템플릿아이디 (PK)

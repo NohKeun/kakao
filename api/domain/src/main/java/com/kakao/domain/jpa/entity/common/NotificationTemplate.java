@@ -1,10 +1,11 @@
 package com.kakao.domain.jpa.entity.common;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
-import lombok.*;
+import com.kakao.domain.jpa.entity.common.pk.NotificationTemplatePk;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.sql.Clob;
 
@@ -14,6 +15,7 @@ import java.sql.Clob;
 @AllArgsConstructor
 @Entity
 @Table(name = "NOTIFICATION_TEMPLATE")
+@IdClass(NotificationTemplatePk.class)
 public class NotificationTemplate {
 
    @Id
@@ -21,7 +23,7 @@ public class NotificationTemplate {
    private String templateId; // 템플릿아이디 (PK)
 
    @Id
-   @Column(name = "TEMPLATE_TYPE_CD")
+   @Column(name = "TEMPLATE_TYPE_CD", nullable = false)
    private String templateTypeCd; // 템플릿종류코드
 
    @Column(name = "TEMPLATE_BUSINESS_CD")
