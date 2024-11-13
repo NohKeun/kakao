@@ -1,124 +1,175 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" version="24.8.4">
-  <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
-    <mxGraphModel dx="1344" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="C-vyLk0tnHw3VtMMgP7b-1" value="" style="edgeStyle=entityRelationEdgeStyle;endArrow=ERzeroToMany;startArrow=ERone;endFill=1;startFill=0;" parent="1" source="C-vyLk0tnHw3VtMMgP7b-24" target="C-vyLk0tnHw3VtMMgP7b-6" edge="1">
-          <mxGeometry width="100" height="100" relative="1" as="geometry">
-            <mxPoint x="340" y="720" as="sourcePoint" />
-            <mxPoint x="440" y="620" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="C-vyLk0tnHw3VtMMgP7b-12" value="" style="edgeStyle=entityRelationEdgeStyle;endArrow=ERzeroToMany;startArrow=ERone;endFill=1;startFill=0;" parent="1" source="C-vyLk0tnHw3VtMMgP7b-3" target="C-vyLk0tnHw3VtMMgP7b-17" edge="1">
-          <mxGeometry width="100" height="100" relative="1" as="geometry">
-            <mxPoint x="400" y="180" as="sourcePoint" />
-            <mxPoint x="460" y="205" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="C-vyLk0tnHw3VtMMgP7b-2" value="Orders" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
-          <mxGeometry x="450" y="120" width="250" height="130" as="geometry" />
-        </mxCell>
-        <mxCell id="C-vyLk0tnHw3VtMMgP7b-3" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" parent="C-vyLk0tnHw3VtMMgP7b-2" vertex="1">
-          <mxGeometry y="30" width="250" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="C-vyLk0tnHw3VtMMgP7b-4" value="PK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;" parent="C-vyLk0tnHw3VtMMgP7b-3" vertex="1">
-          <mxGeometry width="30" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="C-vyLk0tnHw3VtMMgP7b-5" value="order_id int NOT NULL " style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;" parent="C-vyLk0tnHw3VtMMgP7b-3" vertex="1">
-          <mxGeometry x="30" width="220" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="C-vyLk0tnHw3VtMMgP7b-6" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" parent="C-vyLk0tnHw3VtMMgP7b-2" vertex="1">
-          <mxGeometry y="60" width="250" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="C-vyLk0tnHw3VtMMgP7b-7" value="FK1" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" parent="C-vyLk0tnHw3VtMMgP7b-6" vertex="1">
-          <mxGeometry width="30" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="C-vyLk0tnHw3VtMMgP7b-8" value="customer_id int NOT NULL" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="C-vyLk0tnHw3VtMMgP7b-6" vertex="1">
-          <mxGeometry x="30" width="220" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="C-vyLk0tnHw3VtMMgP7b-9" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" parent="C-vyLk0tnHw3VtMMgP7b-2" vertex="1">
-          <mxGeometry y="90" width="250" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="C-vyLk0tnHw3VtMMgP7b-10" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" parent="C-vyLk0tnHw3VtMMgP7b-9" vertex="1">
-          <mxGeometry width="30" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="C-vyLk0tnHw3VtMMgP7b-11" value="order_date date NOT NULL" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="C-vyLk0tnHw3VtMMgP7b-9" vertex="1">
-          <mxGeometry x="30" width="220" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="C-vyLk0tnHw3VtMMgP7b-13" value="Shipments" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
-          <mxGeometry x="450" y="280" width="250" height="130" as="geometry" />
-        </mxCell>
-        <mxCell id="C-vyLk0tnHw3VtMMgP7b-14" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" parent="C-vyLk0tnHw3VtMMgP7b-13" vertex="1">
-          <mxGeometry y="30" width="250" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="C-vyLk0tnHw3VtMMgP7b-15" value="PK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;" parent="C-vyLk0tnHw3VtMMgP7b-14" vertex="1">
-          <mxGeometry width="30" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="C-vyLk0tnHw3VtMMgP7b-16" value="shipment_id int NOT NULL " style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;" parent="C-vyLk0tnHw3VtMMgP7b-14" vertex="1">
-          <mxGeometry x="30" width="220" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="C-vyLk0tnHw3VtMMgP7b-17" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" parent="C-vyLk0tnHw3VtMMgP7b-13" vertex="1">
-          <mxGeometry y="60" width="250" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="C-vyLk0tnHw3VtMMgP7b-18" value="FK1" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" parent="C-vyLk0tnHw3VtMMgP7b-17" vertex="1">
-          <mxGeometry width="30" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="C-vyLk0tnHw3VtMMgP7b-19" value="order_id int NOT NULL" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="C-vyLk0tnHw3VtMMgP7b-17" vertex="1">
-          <mxGeometry x="30" width="220" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="C-vyLk0tnHw3VtMMgP7b-20" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" parent="C-vyLk0tnHw3VtMMgP7b-13" vertex="1">
-          <mxGeometry y="90" width="250" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="C-vyLk0tnHw3VtMMgP7b-21" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" parent="C-vyLk0tnHw3VtMMgP7b-20" vertex="1">
-          <mxGeometry width="30" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="C-vyLk0tnHw3VtMMgP7b-22" value="shipment_date date NOT NULL" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="C-vyLk0tnHw3VtMMgP7b-20" vertex="1">
-          <mxGeometry x="30" width="220" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="C-vyLk0tnHw3VtMMgP7b-23" value="DEPOSIT_INFO" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" parent="1" vertex="1">
-          <mxGeometry x="30" y="120" width="290" height="280" as="geometry" />
-        </mxCell>
-        <mxCell id="C-vyLk0tnHw3VtMMgP7b-24" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" parent="C-vyLk0tnHw3VtMMgP7b-23" vertex="1">
-          <mxGeometry y="30" width="290" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="C-vyLk0tnHw3VtMMgP7b-25" value="PK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;" parent="C-vyLk0tnHw3VtMMgP7b-24" vertex="1">
-          <mxGeometry width="30" height="30" as="geometry">
-            <mxRectangle width="30" height="30" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="C-vyLk0tnHw3VtMMgP7b-26" value="ACCOUNT_NO VARCHAR2(20) NOT NULL " style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;" parent="C-vyLk0tnHw3VtMMgP7b-24" vertex="1">
-          <mxGeometry x="30" width="260" height="30" as="geometry">
-            <mxRectangle width="260" height="30" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="C-vyLk0tnHw3VtMMgP7b-27" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" parent="C-vyLk0tnHw3VtMMgP7b-23" vertex="1">
-          <mxGeometry y="60" width="290" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="C-vyLk0tnHw3VtMMgP7b-28" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" parent="C-vyLk0tnHw3VtMMgP7b-27" vertex="1">
-          <mxGeometry width="30" height="30" as="geometry">
-            <mxRectangle width="30" height="30" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="C-vyLk0tnHw3VtMMgP7b-29" value="ACCOUNT_ST_CD VARCHAR2(2)" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" parent="C-vyLk0tnHw3VtMMgP7b-27" vertex="1">
-          <mxGeometry x="30" width="260" height="30" as="geometry">
-            <mxRectangle width="260" height="30" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Vhe2va-8rPnXwiUODZE3-5" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="1">
-          <mxGeometry x="30" y="210" width="290" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="Vhe2va-8rPnXwiUODZE3-6" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;strokeColor=default;" vertex="1" parent="Vhe2va-8rPnXwiUODZE3-5">
-          <mxGeometry width="30" height="30" as="geometry">
-            <mxRectangle width="30" height="30" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Vhe2va-8rPnXwiUODZE3-7" value="ACCOUNT_ST_CD VARCHAR2(2)" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" vertex="1" parent="Vhe2va-8rPnXwiUODZE3-5">
-          <mxGeometry x="30" width="260" height="30" as="geometry">
-            <mxRectangle width="260" height="30" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+Table DEPOSIT_INFO {
+  ACCOUNT_NO varchar(20) [primary key]
+  ACCOUNT_ST_CD varchar(2)
+  ACCOUNT_TYPE_CD varchar(2)
+  CUSTOMER_NO number
+  OPEN_DT date
+  MATURITY_DT date
+  CURRENT_BAL number(15, 2)
+  ACCOUNT_DESC varchar(255)
+  INTEREST_RATE number(5, 2)
+  FEE_EXEMPTION_FLAG varchar(1)
+}
+
+Table DEPOSIT_TRSC_HIS {
+  ACCOUNT_NO varchar(20)
+  TRSC_SEQ_NO number
+  TRSC_ST_CD varchar(2)
+  TRSC_DT date
+  TRSC_TM varchar(8)
+  REAL_PROC_DT date
+  REAL_PROC_TM varchar(8)
+  CANCEL_DT date
+  CANCEL_TM varchar(8)
+  CANCEL_TRSC_SEQ_NO number
+  TRANSFER_PROC_CD varchar(2)
+  DEBIT_CREDIT_CD varchar(2)
+  TRSC_TYPE_CD varchar(2)
+  TRSC_CURRENCY_CD varchar(3)
+  BF_TRSC_BAL number(15, 2)
+  TRSC_AMT number(15, 2)
+  AF_TRSC_BAL number(15, 2)
+  FEE_AMT number(15, 2)
+}
+
+Table TRSC_RELATION {
+  ORG_TRSC_ID varchar(20) [primary key]
+  ORG_TRSC_SEQ_NO number [primary key]
+  ORG_ASSIGN_CD varchar(2)
+  TRSC_TYPE_CD varchar(2)
+  REL_TRSC_ID varchar(20)
+  REL_TRSC_SEQ_NO number
+  REL_ASSIGN_CD varchar(2)
+}
+
+Table BANK_CUSTOMER {
+  CUSTOMER_NO varchar(20) [primary key]
+  CUSTOMER_ST_CD varchar(2)
+  CUSTOMER_TYPE_CD varchar(2)
+  ID_CARD_TYPE_CD varchar(2)
+  ID_CARD_NO varchar(20)
+  CUSTOMER_NM varchar(100)
+  KAKAO_NO varchar(20)
+  EMAIL_ADDRESS varchar(100)
+  MOBILE_PHONE_NO varchar(20)
+  PRIVACY_AGREE_FLAG varchar(1)
+  EMAIL_AGREE_FLAG varchar(1)
+  SMS_AGREE_FLAG varchar(1)
+  PUSH_AGREE_FLAG varchar(1)
+  KAKAO_AGREE_FLAG varchar(1)
+}
+
+Table KAKAO_CUSTOMER {
+  KAKAO_NO varchar(20) [primary key]
+  KAKAO_ID varchar(100)
+  KAKAO_ST_CD varchar(2)
+  KAKAO_TYPE_CD varchar(2)
+  ID_CARD_TYPE_CD varchar(2)
+  ID_CARD_NO varchar(20)
+  KAKAO_NM varchar(100)
+  EMAIL_ADDRESS varchar(100)
+  MOBILE_PHONE_NO varchar(20)
+  KAKAO_BANK_CUST_FLAG varchar(1)
+  PRIVACY_AGREE_FLAG varchar(1)
+  EMAIL_AGREE_FLAG varchar(1)
+  SMS_AGREE_FLAG varchar(1)
+  PUSH_AGREE_FLAG varchar(1)
+  KAKAO_AGREE_FLAG varchar(1)
+}
+
+Table KAKAO_CUSTOMER_TRSC_HIS {
+  KAKAO_NO varchar(20)
+  TRSC_SEQ_NO number
+  TRSC_ST_CD varchar(2)
+  TRSC_DT date
+  TRSC_TM varchar(8)
+  REAL_PROC_DT date
+  REAL_PROC_TM varchar(8)
+  CANCEL_DT date
+  CANCEL_TM varchar(8)
+  CANCEL_TRSC_SEQ_NO number
+  TRANSFER_PROC_CD varchar(2)
+  DEBIT_CREDIT_CD varchar(2)
+  TRSC_CURRENCY_CD varchar(3)
+  TRSC_AMT number(15, 2)
+}
+
+Table NOTIFICATION_TEMPLATE {
+  TEMPLATE_ID varchar(20) [primary key]
+  TEMPLATE_TYPE_CD varchar(2)
+  TEMPLATE_BUSINESS_CD varchar(2)
+  TEMPLATE_DESCRIPTION varchar(255)
+  TEMPLATE_TITLE varchar(4000)
+  TEMPLATE_MESSAGE_CONTENT clob
+}
+
+Table NOTIFICATION_QUEUE {
+  NOTIFICATION_QUEUE_NO number [primary key]
+  TEMPLATE_ID varchar(20)
+  TEMPLATE_TYPE_CD varchar(2)
+  RECIPIENTTYPE_CD varchar(2)
+  RECIPIENT varchar(20)
+  NOTIFICATION_REG_DTM timestamp
+  SCHEDULED_SEND_DATETIME timestamp
+  NOTIFICATION_TITLE_PARAM varchar(4000)
+  NOTIFICATION_MESSAGE_PARAM varchar(4000)
+}
+
+Table NOTIFICATION_KAKAO_LOG {
+  NOTIFICATION_DT date
+  KAKAO_NO varchar(20)
+  NOTIFICATION_SEQ_NO number
+  NOTIFICATION_QUEUE_NO number
+  NOTIFICATION_CREATE_DTM timestamp
+  SCHEDULED_SEND_DTM timestamp
+  REAL_SEND_DTM timestamp
+  NOTIFICATION_TITLE varchar(4000)
+  NOTIFICATION_MESSAGE clob
+}
+
+Table NOTIFICATION_CUSTOMER_LOG {
+  NOTIFICATION_DT date
+  CUSTOMER_NO varchar(20)
+  NOTIFICATION_SEQ_NO number
+  NOTIFICATION_QUEUE_NO number
+  NOTIFICATION_CREATE_DTM timestamp
+  SCHEDULED_SEND_DTM timestamp
+  REAL_SEND_DTM timestamp
+  NOTIFICATION_TITLE varchar(4000)
+  NOTIFICATION_MESSAGE clob
+}
+
+Table NOTIFICATION_SUCCESS {
+  NOTIFICATION_QUEUE_NO number [primary key]
+  TEMPLATE_ID varchar(20)
+  TEMPLATE_TYPE_CD varchar(2)
+  RECIPIENTTYPE_CD varchar(2)
+  RECIPIENT varchar(20)
+  NOTIFICATION_CREATE_DTM timestamp
+  NOTIFICATION_SUCCESS_DTM timestamp
+  NOTIFICATION_TITLE_PARAM varchar(4000)
+  NOTIFICATION_MESSAGE_PARAM varchar(4000)
+}
+
+Table NOTIFICATION_ERROR {
+  NOTIFICATION_QUEUE_NO number [primary key]
+  TEMPLATE_ID varchar(20)
+  TEMPLATE_TYPE_CD varchar(2)
+  RECIPIENTTYPE_CD varchar(2)
+  RECIPIENT varchar(20)
+  NOTIFICATION_CREATE_DTM timestamp
+  NOTIFICATION_ERROR_DTM timestamp
+  NOTIFICATION_ERROR_CNT number
+  NOTIFICATION_TITLE_PARAM varchar(4000)
+  NOTIFICATION_MESSAGE_PARAM varchar(4000)
+  ERROR_LOG clob
+}
+
+Ref: DEPOSIT_TRSC_HIS.ACCOUNT_NO > DEPOSIT_INFO.ACCOUNT_NO
+Ref: KAKAO_CUSTOMER_TRSC_HIS.KAKAO_NO > KAKAO_CUSTOMER.KAKAO_NO
+Ref: NOTIFICATION_QUEUE.TEMPLATE_ID > NOTIFICATION_TEMPLATE.TEMPLATE_ID
+Ref: NOTIFICATION_QUEUE.TEMPLATE_TYPE_CD > NOTIFICATION_TEMPLATE.TEMPLATE_TYPE_CD
+Ref: NOTIFICATION_KAKAO_LOG.KAKAO_NO > KAKAO_CUSTOMER.KAKAO_NO
+Ref: NOTIFICATION_KAKAO_LOG.NOTIFICATION_QUEUE_NO > NOTIFICATION_QUEUE.NOTIFICATION_QUEUE_NO
+Ref: NOTIFICATION_CUSTOMER_LOG.CUSTOMER_NO > BANK_CUSTOMER.CUSTOMER_NO
+Ref: NOTIFICATION_CUSTOMER_LOG.NOTIFICATION_QUEUE_NO > NOTIFICATION_QUEUE.NOTIFICATION_QUEUE_NO
