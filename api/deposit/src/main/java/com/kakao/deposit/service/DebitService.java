@@ -2,6 +2,7 @@ package com.kakao.deposit.service;
 
 import com.kakao.deposit.iomodel.DebitServiceInput;
 import com.kakao.deposit.iomodel.DebitServiceOutput;
+import com.kakao.domain.inf.common.CustomerInf;
 import com.kakao.domain.inf.common.NotificationInf;
 import com.kakao.domain.inf.deposit.DepositInf;
 import com.kakao.domain.inf.factory.CommonFactory;
@@ -31,16 +32,19 @@ public class DebitService {
     //구현체 호출 인터페이스
     private NotificationInf notificationInf;
     private DepositInf depositInf;
+    private CustomerInf customerInf;
 
     public DebitServiceOutput execute(DebitServiceInput input) throws Exception{
         this.input = input;
 
-        //1.injection(의존성주입) -> 수신통장 종류 , 알림메시지 종류 , 고객 종류
-        this.notificationInf = commonFactory.injectionNotificationInf("kakaoTalk");
-        this.notificationInf.sendNotification();
+        //1.injection(의존성주입)
+        injection();
 
-        this.depositInf = depositFactory.injectionDepositInf("saving");
-        this.depositInf.debit();
+        //2.validate
+        validation();
+
+        //3.debit
+        debit();
 
         daoBankCustomer.insert(new BankCustomer());
 
@@ -55,5 +59,39 @@ public class DebitService {
         //5.성공 반환
 
         return output;
+    }
+
+    private void injection() throws Exception {
+
+        //수신은 보통예금 계좌
+        this.depositInf = depositFactory.injectionDepositInf("saving");
+
+        //알림은 카카오톡으로
+        this.notificationInf = commonFactory.injectionNotificationInf("kakao");
+
+        //고객은 카카오고객
+        this.customerInf = commonFactory.injectionCustomerInf("kakao");
+    }
+
+    private void validation() throws Exception {
+
+        /**
+         * 계좌 종류에 따라서 검증함수 호출
+         * if Saving(보통예금) 계좌인 경우
+         * 1.정상계좌 여부 체크
+         * 2.잔액, 만기 체크
+         */
+        this.depositInf.validate();
+
+        /**
+         * 고객 종류에 따라서 검증함수 호출
+         * 1.정상고객 여부 체크
+         * 2.블랙리스트 체크(신용3사 제휴 검증 등)
+         */
+        this.customerInf.validate();
+    }
+
+    private void debit() throws Exception {
+        this.depositInf.debit();
     }
 }
