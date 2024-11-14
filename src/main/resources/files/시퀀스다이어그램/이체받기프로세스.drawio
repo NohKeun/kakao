@@ -390,6 +390,18 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="kIjc9tb8nOZSVFgZSKF5-41" value="이체받기" style="html=1;verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="1240" as="sourcePoint" />
+            <mxPoint x="150" y="1240" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="210" y="1240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kIjc9tb8nOZSVFgZSKF5-42" value="" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="1210" width="30" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
