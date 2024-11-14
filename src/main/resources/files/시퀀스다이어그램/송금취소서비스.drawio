@@ -95,8 +95,8 @@
         </mxCell>
         <mxCell id="2TJhX8au2aPFaMWwYMit-91" value="이체취소" style="html=1;verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="274.5" y="720" as="sourcePoint" />
-            <mxPoint x="190" y="720" as="targetPoint" />
+            <mxPoint x="264.5" y="720" as="sourcePoint" />
+            <mxPoint x="180" y="720" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="2TJhX8au2aPFaMWwYMit-92" value="수신거래내역 SELECT(DEPOSIT_TRSC_HIS)&lt;br&gt;거래프로세스코드&amp;nbsp;TRANSFER_PROC_CD 에 진행중,&amp;nbsp;&lt;br&gt;입금지급코드 DEBIT_CREDIT_CD에 송금거래&amp;nbsp;조회" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" target="2TJhX8au2aPFaMWwYMit-83">
