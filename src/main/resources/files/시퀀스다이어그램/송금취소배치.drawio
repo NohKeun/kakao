@@ -98,8 +98,8 @@
         </mxCell>
         <mxCell id="uSRMKad_hPCsPKw7Y9NH-13" value="데몬배치 end" style="html=1;verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="254.5" y="700" as="sourcePoint" />
-            <mxPoint x="170" y="700" as="targetPoint" />
+            <mxPoint x="244.5" y="700" as="sourcePoint" />
+            <mxPoint x="160" y="700" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="595_DCwvICg61NAzfVR9-1" value="수신거래내역 SELECT(DEPOSIT_TRSC_HIS)&lt;br&gt;거래프로세스코드&amp;nbsp;TRANSFER_PROC_CD 에 진행중,&amp;nbsp;&lt;br&gt;입금지급코드 DEBIT_CREDIT_CD에 송금거래,&lt;br&gt;거래일시 TRSC_DT 가 24시간 도래한 거래들 조회" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="1" target="7ABqUD8M8o28JcpTFlhN-5" edge="1">
